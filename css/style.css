@@ -1,0 +1,115 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+}
+
+.container .informacoes{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+    gap: 20px;
+}
+
+.container .informacoes h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 23px;
+}
+
+.container .informacoes p {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.container .formulario{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+}
+
+.container .formulario .form-control{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.container .formulario h4 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+
+.form-control input, .form-control textarea {
+    border: 1px solid #000000;
+    color: #a8a8a8;
+    display: block;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control .mensagem{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.form-control .mensagem::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.formulario .btn {
+    background-color: #3CCC87;
+    color: white;
+    width: 100%;
+    height: 42px;
+    border: none;
+    font-size: 15px;
+    padding: auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/* Error e success */
+
+.form-control.success input, .form-control.success textarea {
+    border-color: #00c22b;
+}
+
+.form-control.error input, .form-control.error textarea {
+    border-color: #F52E2E;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #F52E2E;
+}
